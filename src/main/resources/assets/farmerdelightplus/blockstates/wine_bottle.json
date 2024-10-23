@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "farmerdelightplus:block/wine/0"
+    },
+    "fill=1": {
+      "model": "farmerdelightplus:block/wine/1"
+    },
+    "fill=2": {
+      "model": "farmerdelightplus:block/wine/2"
+    },
+    "fill=3": {
+      "model": "farmerdelightplus:block/wine/3"
+    },
+    "fill=4": {
+      "model": "farmerdelightplus:block/wine/4"
+    }
+  }
+}

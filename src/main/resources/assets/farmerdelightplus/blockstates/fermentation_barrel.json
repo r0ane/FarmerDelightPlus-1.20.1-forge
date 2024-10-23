@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "farmerdelightplus:block/fermentation_barrel",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "farmerdelightplus:block/fermentation_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "farmerdelightplus:block/fermentation_barrel",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "farmerdelightplus:block/fermentation_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "farmerdelightplus:block/fermentation_barrel"
+    },
+    "facing=west": {
+      "model": "farmerdelightplus:block/fermentation_barrel",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

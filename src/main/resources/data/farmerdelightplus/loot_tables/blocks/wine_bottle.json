@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerdelightplus:wine_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"fill\":0,CustomModelData:0}",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmerdelightplus:wine_bottle",
+                  "properties": {
+                    "fill": "0"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"fill\":1,CustomModelData:1}",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmerdelightplus:wine_bottle",
+                  "properties": {
+                    "fill": "1"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"fill\":2,CustomModelData:2}",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmerdelightplus:wine_bottle",
+                  "properties": {
+                    "fill": "2"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"fill\":3,CustomModelData:3}",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmerdelightplus:wine_bottle",
+                  "properties": {
+                    "fill": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"fill\":4,CustomModelData:4}",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "farmerdelightplus:wine_bottle",
+                  "properties": {
+                    "fill": "4"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

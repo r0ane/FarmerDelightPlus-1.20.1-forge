@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "farmerdelightplus:block/barrel_bottom",
+    "side": "farmerdelightplus:block/barrel_side",
+    "top": "farmerdelightplus:block/barrel_top"
+  }
+}

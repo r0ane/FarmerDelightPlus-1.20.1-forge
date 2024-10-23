@@ -1,0 +1,35 @@
+{
+  "parent": "farmerdelightplus:block/wine/4",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "farmerdelightplus:item/wine/0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "farmerdelightplus:item/wine/1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "farmerdelightplus:item/wine/2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "farmerdelightplus:item/wine/3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "farmerdelightplus:item/wine/4"
+    }
+  ]
+}

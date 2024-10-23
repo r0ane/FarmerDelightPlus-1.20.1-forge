@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fill=0": {
+      "model": "farmerdelightplus:block/vodka/0"
+    },
+    "fill=1": {
+      "model": "farmerdelightplus:block/vodka/1"
+    },
+    "fill=2": {
+      "model": "farmerdelightplus:block/vodka/2"
+    },
+    "fill=3": {
+      "model": "farmerdelightplus:block/vodka/3"
+    },
+    "fill=4": {
+      "model": "farmerdelightplus:block/vodka/4"
+    }
+  }
+}
