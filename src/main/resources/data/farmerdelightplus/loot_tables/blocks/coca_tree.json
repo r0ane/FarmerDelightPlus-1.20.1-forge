@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerdelightplus:coca_tree_seed"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerdelightplus:coca_leaf",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "farmerdelightplus:coca_tree",
+              "properties": {
+                "age": "3"
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "farmersdelight:straw_harvesters"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

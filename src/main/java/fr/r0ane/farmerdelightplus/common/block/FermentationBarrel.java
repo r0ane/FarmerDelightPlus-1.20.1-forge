@@ -1,15 +1,12 @@
 package fr.r0ane.farmerdelightplus.common.block;
 
-import fr.r0ane.farmerdelightplus.AllBlockEntity;
 import fr.r0ane.farmerdelightplus.AllItems;
 import fr.r0ane.farmerdelightplus.common.blockentity.FermentationBarrelBlockEntity;
-import fr.r0ane.farmerdelightplus.common.item.WineBottleItem;
+import fr.r0ane.farmerdelightplus.util.FillDataItem;
 import fr.r0ane.farmerdelightplus.util.Util;
 import fr.r0ane.farmerdelightplus.util.fItems;
-import net.minecraft.client.main.GameConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.gametest.framework.GameTestRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -29,7 +26,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.registries.GameData;
 import org.jetbrains.annotations.Nullable;
 
 public class FermentationBarrel extends BaseEntityBlock {
@@ -69,7 +65,8 @@ public class FermentationBarrel extends BaseEntityBlock {
                 if (pBlockEntity.getHisType() == null)
                 {
                     pBlockEntity.setHisType(
-                            pItem.getItem() == AllItems.BOWL_OF_CRUSHED_GRAPES.get() ? "wine" : null
+                            pItem.getItem() == AllItems.BOWL_OF_CRUSHED_GRAPE.get() ? "wine" :
+                                    pItem.getItem() == AllItems.BOWL_OF_POTATO_SUGAR.get() ? "vodka" : null
                     );
                 }
                 if (!(pBlockEntity.getHisType() == null))
@@ -100,7 +97,7 @@ public class FermentationBarrel extends BaseEntityBlock {
         else if (pBlockEntity.getQuantityB() >= 1000 && pItem.getItem() == i.GettingItemB && pItem.getTag().getInt("fill") == 0)
         {
             pBlockEntity.DecrementB(1000);
-            Util.ConsumeItem(pItem, WineBottleItem.setFillTag(i.GettingItemB.getDefaultInstance(), 4), player, pHand);
+            Util.ConsumeItem(pItem, FillDataItem.setFillTag(i.GettingItemB.getDefaultInstance(), 4), player, pHand);
         }
     }
 

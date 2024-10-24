@@ -10,65 +10,65 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{\"farmerdelightplus.fill\":\"0\"}",
+              "tag": "{\"fill\":0,CustomModelData:0}",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
                   "block": "farmerdelightplus:vodka_bottle",
                   "properties": {
-                    "fill": 0
+                    "fill": "0"
                   }
                 }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{\"farmerdelightplus.fill\":\"1\"}",
+              "tag": "{\"fill\":1,CustomModelData:1}",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
                   "block": "farmerdelightplus:vodka_bottle",
                   "properties": {
-                    "fill": 1
+                    "fill": "1"
                   }
                 }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{\"farmerdelightplus.fill\":\"2\"}",
+              "tag": "{\"fill\":2,CustomModelData:2}",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
                   "block": "farmerdelightplus:vodka_bottle",
                   "properties": {
-                    "fill": 2
+                    "fill": "2"
                   }
                 }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{\"farmerdelightplus.fill\":\"3\"}",
+              "tag": "{\"fill\":3,CustomModelData:3}",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
                   "block": "farmerdelightplus:vodka_bottle",
                   "properties": {
-                    "fill": 3
+                    "fill": "3"
                   }
                 }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{\"farmerdelightplus.fill\":\"4\"}",
+              "tag": "{\"fill\":4,CustomModelData:4}",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
                   "block": "farmerdelightplus:vodka_bottle",
                   "properties": {
-                    "fill": 4
+                    "fill": "4"
                   }
                 }
               ]

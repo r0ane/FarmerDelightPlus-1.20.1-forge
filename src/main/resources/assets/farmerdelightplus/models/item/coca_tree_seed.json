@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "farmerdelightplus:item/grapes"
+    "layer0": "farmerdelightplus:item/coca_tree_seed"
   }
 }

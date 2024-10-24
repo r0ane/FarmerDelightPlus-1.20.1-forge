@@ -14,11 +14,11 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class WineBottle extends Block {
+public class VodkaBottle extends Block {
     public static final IntegerProperty FILL = IntegerProperty.create("fill", 0, 4);
     private static final VoxelShape SHAPE = makeShape();
 
-    public WineBottle(Properties pProperties) {
+    public VodkaBottle(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(FILL, 4));
     }
@@ -45,8 +45,8 @@ public class WineBottle extends Block {
 
     public static VoxelShape makeShape() {
         VoxelShape shape = Shapes.empty();
-        shape = Shapes.join(shape, Shapes.box(0.375, 0.0, 0.375, 0.625, 0.625, 0.625), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.4375, 0.625, 0.4375, 0.5625, 0.8125, 0.5625), BooleanOp.OR);
+        shape = Shapes.join(shape, Shapes.box(0.375, 0.0, 0.375, 0.625, 0.6875, 0.625), BooleanOp.OR);
+        shape = Shapes.join(shape, Shapes.box(0.4375, 0.6875, 0.4375, 0.5625, 0.875, 0.5625), BooleanOp.OR);
         return shape;
     }
 

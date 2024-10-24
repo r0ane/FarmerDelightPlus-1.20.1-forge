@@ -18,19 +18,23 @@ public class fItems {
     public fItems (String type) {
         this.type = type;
         ItemA = switch (this.type) {
-            case "wine" -> AllItems.BOWL_OF_CRUSHED_GRAPES.get();
+            case "wine" -> AllItems.BOWL_OF_CRUSHED_GRAPE.get();
+            case "vodka" -> AllItems.BOWL_OF_POTATO_SUGAR.get();
             default -> throw new IllegalStateException("Invalid day: " + this.type);
         };
         GettingItemA = switch (this.type) {
             case "wine" -> AllItems.EMPTY_WINE_GLASS.get();
+            case "vodka" -> AllItems.EMPTY_SHOT_GLASS.get();
             default -> throw new IllegalStateException("Invalid day: " + this.type);
         };
         GettingItemB = switch (this.type) {
             case "wine" -> AllBlocks.WINE_BOTTLE.get().asItem();
+            case "vodka" -> AllBlocks.VODKA_BOTTLE.get().asItem();
             default -> throw new IllegalStateException("Invalid day: " + this.type);
         };
         ItemB = switch (this.type) {
             case "wine" -> AllItems.WINE_GLASS.get();
+            case "vodka" -> AllItems.VODKA_SHOT_GLASS.get();
             default -> throw new IllegalStateException("Invalid day: " + this.type);
         };
     }

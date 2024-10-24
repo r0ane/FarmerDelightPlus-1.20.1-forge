@@ -1,0 +1,35 @@
+{
+  "parent": "farmerdelightplus:block/vodka/4",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 0
+      },
+      "model": "farmerdelightplus:item/vodka/0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "farmerdelightplus:item/vodka/1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "farmerdelightplus:item/vodka/2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "farmerdelightplus:item/vodka/3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "farmerdelightplus:item/vodka/4"
+    }
+  ]
+}

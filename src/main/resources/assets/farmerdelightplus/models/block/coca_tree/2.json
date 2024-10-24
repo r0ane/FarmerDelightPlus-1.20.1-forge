@@ -1,0 +1,6 @@
+{
+  "parent": "farmerdelightplus:block/cross_2",
+  "textures": {
+    "cross": "farmerdelightplus:block/coca_tree/2"
+  }
+}

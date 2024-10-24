@@ -1,6 +1,9 @@
 package fr.r0ane.farmerdelightplus;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -41,7 +44,6 @@ public class Main
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
-            event.accept(AllItems.GRAPES);
         }
     }
 
@@ -56,7 +58,8 @@ public class Main
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(AllBlocks.VODKA_BOTTLE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(AllBlocks.COCA_TREE.get(), RenderType.cutout());
         }
     }
 }
