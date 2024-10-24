@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "P",
+    "G"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_button"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "G": {
+      "item": "minecraft:green_stained_glass"
+    }
+  },
+  "result": {
+    "item": "farmerdelightplus:wine_bottle",
+    "nbt": "{\"farmerdelightplus.fill\":\"0\",\"farmerdelightplus.CustomModelData\":\"0\"}"
+  }
+}

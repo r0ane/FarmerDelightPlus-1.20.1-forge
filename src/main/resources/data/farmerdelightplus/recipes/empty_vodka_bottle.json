@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "G",
+    "G"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:warped_button"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "farmerdelightplus:vodka_bottle",
+    "nbt": {
+      "fill": 0,
+      "CustomModelData": 0
+    }
+  }
+}

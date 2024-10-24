@@ -24,11 +24,15 @@ public class CreativeTabs {
                         pOutput.accept(AllItems.EMPTY_WINE_GLASS.get());
                         pOutput.accept(AllItems.WINE_GLASS.get());
                         pOutput.accept(AllItems.BOWL_OF_CRUSHED_POTATO.get());
-                        pOutput.accept(AllItems.BOWL_OF_POTATO_SUGAR.get());
+                        pOutput.accept(AllItems.POTATO_SUGAR_BOTTLE.get());
                         pOutput.accept(FillDataItem.setFillTag(AllBlocks.VODKA_BOTTLE.get().asItem().getDefaultInstance(), 0));
                         pOutput.accept(FillDataItem.setFillTag(AllBlocks.VODKA_BOTTLE.get().asItem().getDefaultInstance(), 4));
                         pOutput.accept(AllItems.EMPTY_SHOT_GLASS.get());
                         pOutput.accept(AllItems.VODKA_SHOT_GLASS.get());
+                        pOutput.accept(AllItems.BARLEY.get());
+                        pOutput.accept(AllItems.BARLEY_SUGAR_BOTTLE.get());
+                        pOutput.accept(AllItems.PINT_OF_BEER.get());
+                        pOutput.accept(AllItems.BEER_BOTTLE.get());
                         pOutput.accept(AllBlocks.FERMENTATION_BARREL.get());
                         pOutput.accept(AllItems.COCA_TREE_SEED.get());
                         pOutput.accept(AllItems.COCA_LEEF.get());

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "farmerdelightplus:grape"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:bowl_of_crushed_grape",
+    "count": 1
+  }
+}

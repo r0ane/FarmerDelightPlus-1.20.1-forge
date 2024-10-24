@@ -28,6 +28,8 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
 public class FermentationBarrel extends BaseEntityBlock {
     public static final DirectionProperty FACING = DirectionProperty.create("facing", Direction.values());
     public FermentationBarrel (Properties properties) {
@@ -66,7 +68,8 @@ public class FermentationBarrel extends BaseEntityBlock {
                 {
                     pBlockEntity.setHisType(
                             pItem.getItem() == AllItems.BOWL_OF_CRUSHED_GRAPE.get() ? "wine" :
-                                    pItem.getItem() == AllItems.BOWL_OF_POTATO_SUGAR.get() ? "vodka" : null
+                                    pItem.getItem() == AllItems.POTATO_SUGAR_BOTTLE.get() ? "vodka" :
+                                            pItem.getItem() == AllItems.BARLEY_SUGAR_BOTTLE.get() ? "beer" : null
                     );
                 }
                 if (!(pBlockEntity.getHisType() == null))
@@ -84,33 +87,25 @@ public class FermentationBarrel extends BaseEntityBlock {
 
     private void onUse (FermentationBarrelBlockEntity pBlockEntity, ItemStack pItem, Player player, InteractionHand pHand, String pType) {
         fItems i = new fItems(pType);
-        if (pBlockEntity.getQuantityA() + pBlockEntity.getQuantityB() <= 4900 && pItem.getItem() == i.ItemA)
+        if (pBlockEntity.getQuantityA() + pBlockEntity.getQuantityB() <= 4750 && pItem.getItem() == i.ItemA)
         {
-            pBlockEntity.IncrementA(100);
-            Util.ConsumeItem(pItem, Items.BOWL.asItem(), player, pHand);
+            pBlockEntity.IncrementA(250);
+            Util.ConsumeItem(pItem, pItem.getCraftingRemainingItem().getItem(), player, pHand);
         }
         else if (pBlockEntity.getQuantityB() >= 250 && pItem.getItem() == i.GettingItemA)
         {
             pBlockEntity.DecrementB(250);
             Util.ConsumeItem(pItem, i.ItemB, player, pHand);
         }
-        else if (pBlockEntity.getQuantityB() >= 1000 && pItem.getItem() == i.GettingItemB && pItem.getTag().getInt("fill") == 0)
+        else if (pBlockEntity.getQuantityB() >= 1000 && Objects.equals(pBlockEntity.getHisType(), "beer"))
         {
             pBlockEntity.DecrementB(1000);
-            Util.ConsumeItem(pItem, FillDataItem.setFillTag(i.GettingItemB.getDefaultInstance(), 4), player, pHand);
+            Util.ConsumeItem(pItem, i.ItemC, player, pHand);
         }
-    }
-
-    private void consumeItem (ItemStack pItemStack, Item pItem, Player pPlayer, InteractionHand pHand) {
-        if (!pPlayer.isCreative()) {
-            pItemStack.setCount(pItemStack.getCount() - 1);
-            pPlayer.setItemInHand(pHand, pItemStack);
-
-            if (pItemStack.isEmpty()) {
-                pPlayer.setItemInHand(pHand, pItem.getDefaultInstance());
-            } else {
-                pPlayer.addItem(pItem.getDefaultInstance());
-            }
+        else if (pBlockEntity.getQuantityB() >= 1000 && pItem.getItem() == i.GettingItemB.getItem() && pItem.getTag().getInt("fill") == i.GettingItemB.getTag().getInt("fill"))
+        {
+            pBlockEntity.DecrementB(1000);
+            Util.ConsumeItem(pItem, i.ItemC, player, pHand);
         }
     }
 
