@@ -31,11 +31,13 @@ public class CreativeTabs {
                         pOutput.accept(AllItems.VODKA_SHOT_GLASS.get());
                         pOutput.accept(AllItems.BARLEY.get());
                         pOutput.accept(AllItems.BARLEY_SUGAR_BOTTLE.get());
+                        pOutput.accept(AllItems.EMPTY_PINT_OF_BEER.get());
                         pOutput.accept(AllItems.PINT_OF_BEER.get());
                         pOutput.accept(AllItems.BEER_BOTTLE.get());
                         pOutput.accept(AllBlocks.FERMENTATION_BARREL.get());
                         pOutput.accept(AllItems.COCA_TREE_SEED.get());
                         pOutput.accept(AllItems.COCA_LEEF.get());
+                        pOutput.accept(AllBlocks.FREEZER.get());
                     })
                     .build());
 

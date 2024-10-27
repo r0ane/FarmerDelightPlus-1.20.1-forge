@@ -36,5 +36,9 @@
   "block.farmerdelightplus.fermentation_barrel": "Fermentation Barrel",
   "item.farmerdelightplus.bowl_of_crushed_grape": "Bowl Of Crushed Grape",
   "item.farmerdelightplus.bowl_of_crushed_potato": "Bowl Of Crushed Potato",
-  "item.farmerdelightplus.bowl_of_potato_sugar": "Bowl Of Potato Sugar"
+  "item.farmerdelightplus.potato_sugar_bottle": "Potato Sugar Bottle",
+  "item.farmerdelightplus.barley_sugar_bottle": "Barley Sugar Bottle",
+  "item.farmerdelightplus.coca_tree_seed": "Coca Tree Seed",
+  "item.farmerdelightplus.coca_leaf": "Coca Leaf",
+  "block.farmerdelightplus.freezer": "Freezer"
 }

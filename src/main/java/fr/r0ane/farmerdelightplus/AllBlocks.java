@@ -1,17 +1,16 @@
 package fr.r0ane.farmerdelightplus;
 
-import fr.r0ane.farmerdelightplus.common.block.CocaSapling;
-import fr.r0ane.farmerdelightplus.common.block.FermentationBarrel;
-import fr.r0ane.farmerdelightplus.common.block.VodkaBottle;
-import fr.r0ane.farmerdelightplus.common.block.WineBottle;
+import fr.r0ane.farmerdelightplus.common.block.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.registry.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -30,6 +29,12 @@ public class AllBlocks {
 
     public static final RegistryObject<CocaSapling> COCA_TREE = BLOCKS.register("coca_tree",
             () -> new CocaSapling(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Freezer> FREEZER = registerBlock("freezer",
+            () -> new Freezer(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Grape> GRAPE = BLOCKS.register("grape",
+            () -> new Grape(BlockBehaviour.Properties.of().noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

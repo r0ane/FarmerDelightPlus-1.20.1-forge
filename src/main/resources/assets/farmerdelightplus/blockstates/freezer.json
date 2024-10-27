@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "farmerdelightplus:block/freezer",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "farmerdelightplus:block/freezer"
+    },
+    "facing=south": {
+      "model": "farmerdelightplus:block/freezer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmerdelightplus:block/freezer",
+      "y": 270
+    }
+  }
+}
