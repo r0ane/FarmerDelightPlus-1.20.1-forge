@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "create:wheat_flour"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:breading"
+  }
+}

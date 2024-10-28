@@ -38,8 +38,10 @@ public class CreativeTabs {
                         pOutput.accept(AllBlocks.FERMENTATION_BARREL.get());
                         pOutput.accept(AllItems.COCA_TREE_SEED.get());
                         pOutput.accept(AllItems.COCA_LEEF.get());
+                        pOutput.accept(AllItems.COCAINE.get());
                         pOutput.accept(AllBlocks.FREEZER.get());
                         pOutput.accept(AllBlocks.STRAWBERRY.get());
+                        pOutput.accept(AllItems.VANILLA.get());
                         pOutput.accept(AllItems.STRAWBERRY_ICE_CREAM_BOTTLE.get());
                         pOutput.accept(AllItems.VANILLA_ICE_CREAM_BOTTLE.get());
                         pOutput.accept(AllItems.CHOCOLATE_ICE_CREAM_BOTTLE.get());
@@ -50,6 +52,18 @@ public class CreativeTabs {
                         pOutput.accept(AllItems.STRAWBERRY_ICE_CREAM.get());
                         pOutput.accept(AllItems.VANILLA_ICE_CREAM.get());
                         pOutput.accept(AllItems.CHOCOLATE_ICE_CREAM.get());
+                        pOutput.accept(AllItems.BREADING.get());
+                        pOutput.accept(AllItems.TENDERS.get());
+                        pOutput.accept(AllItems.COOKED_TENDERS.get());
+                        pOutput.accept(AllItems.EMPTY_BUCKET.get());
+                        pOutput.accept(AllItems.TENDERS_BUCKET.get());
+                        pOutput.accept(AllItems.FRIES.get());
+                        pOutput.accept(AllItems.COOKED_FRIES.get());
+                        pOutput.accept(AllItems.PIZZA.get());
+                        pOutput.accept(AllItems.COOKED_PIZZA.get());
+                        pOutput.accept(AllItems.PIECE_OF_PIZZA.get());
+                        pOutput.accept(AllItems.CHICKEN_WRAP.get());
+                        pOutput.accept(AllItems.COKE.get());
                     })
                     .build());
 

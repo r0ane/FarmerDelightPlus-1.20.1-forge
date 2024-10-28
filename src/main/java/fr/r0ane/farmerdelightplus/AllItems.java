@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.FoodValues;
 
 public class AllItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -94,6 +95,48 @@ public class AllItems {
 
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new ItemNameBlockItem(AllBlocks.STRAWBERRY.get(), new Item.Properties().food(Food.STRAWBERRY)));
+
+    public static final RegistryObject<Item> BREADING = ITEMS.register("breading",
+            () -> new Food(new Item.Properties().food(Food.BREADING)));
+
+    public static final RegistryObject<Item> TENDERS = ITEMS.register("tenders",
+            () -> new Food(new Item.Properties().food(Food.TENDERS)));
+
+    public static final RegistryObject<Item> COOKED_TENDERS = ITEMS.register("cooked_tenders",
+            () -> new Food(new Item.Properties().food(Food.COOKED_TENDERS)));
+
+    public static final RegistryObject<Item> EMPTY_BUCKET = ITEMS.register("empty_bucket",
+            () -> new Food(new Item.Properties()));
+
+    public static final RegistryObject<Item> TENDERS_BUCKET = ITEMS.register("tenders_bucket",
+            () -> new Food(new Item.Properties().craftRemainder(EMPTY_BUCKET.get()).food(Food.TENDERS_BUCKET)));
+
+    public static final RegistryObject<Item> FRIES = ITEMS.register("fries",
+            () -> new Food(new Item.Properties().food(Food.FRIES)));
+
+    public static final RegistryObject<Item> COOKED_FRIES = ITEMS.register("cooked_fries",
+            () -> new Food(new Item.Properties().food(Food.COOKED_FRIES)));
+
+    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+            () -> new Food(new Item.Properties().food(Food.PIZZA)));
+
+    public static final RegistryObject<Item> COOKED_PIZZA = ITEMS.register("cooked_pizza",
+            () -> new Food(new Item.Properties().food(Food.COOKED_PIZZA)));
+
+    public static final RegistryObject<Item> PIECE_OF_PIZZA = ITEMS.register("piece_of_pizza",
+            () -> new Food(new Item.Properties().food(Food.PIECE_OF_PIZZA)));
+
+    public static final RegistryObject<Item> CHICKEN_WRAP = ITEMS.register("chicken_wrap",
+            () -> new Food(new Item.Properties().food(FoodValues.MUTTON_WRAP)));
+
+    public static final RegistryObject<Item> COKE = ITEMS.register("coke",
+            () -> new Drink(new Item.Properties().food(Drink.COKE)));
+
+    public static final RegistryObject<Item> VANILLA = ITEMS.register("vanilla",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> COCAINE = ITEMS.register("cocaine",
+            () -> new Cocaine(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

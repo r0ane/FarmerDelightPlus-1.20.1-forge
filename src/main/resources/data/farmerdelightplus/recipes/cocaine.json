@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:coca_leaf"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "farmerdelightplus:cocaine"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

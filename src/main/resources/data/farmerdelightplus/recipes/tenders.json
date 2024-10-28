@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:breading"
+    },
+    {
+      "item": "farmersdelight:chicken_cuts"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:tenders",
+    "count": 2
+  }
+}

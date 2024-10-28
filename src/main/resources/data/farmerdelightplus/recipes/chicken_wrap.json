@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:bread"
+    },
+    {
+      "item": "farmerdelightplus:cooked_tenders"
+    },
+    {
+      "item": "farmerdelightplus:cooked_tenders"
+    },
+    {
+      "item": "farmerdelightplus:cooked_tenders"
+    },
+    {
+      "tag": "forge:salad_ingredients"
+    },
+    {
+      "tag": "forge:crops/onion"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:chicken_wrap"
+  }
+}

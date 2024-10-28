@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XRX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "farmerdelightplus:cooked_tenders"
+    },
+    "R": {
+      "item": "farmerdelightplus:empty_bucket"
+    }
+  },
+  "result": {
+    "item": "farmerdelightplus:tenders_bucket"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:cooked_pizza"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "farmerdelightplus:piece_of_pizza"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
