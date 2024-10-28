@@ -24,6 +24,7 @@ public class Drink extends Item {
     public static final FoodProperties PINT_OF_BEER = new FoodProperties.Builder().nutrition(2).alwaysEat().build();
     public static final FoodProperties VODKA = new FoodProperties.Builder().nutrition(1).alwaysEat().build();
     public static final FoodProperties SUGAR_BOTTLE = new FoodProperties.Builder().nutrition(1).alwaysEat().build();
+    public static final FoodProperties ICE_CREAM = new FoodProperties.Builder().nutrition(3).alwaysEat().build();
 
     public Drink(Properties pProperties) {
         super(pProperties);

@@ -2,11 +2,11 @@
   "type": "farmerdelightplus:freezer",
   "ingredients": [
     {
-      "item": "minecraft:melon_slice"
+      "item": "farmerdelightplus:chocolate_ice_cream_bottle"
     }
   ],
   "result": {
-    "item": "farmersdelight:melon_popsicle"
+    "item": "farmerdelightplus:chocolate_ice_cream_ball"
   },
   "cooking_time": 125
 }

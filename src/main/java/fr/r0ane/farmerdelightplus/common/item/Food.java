@@ -11,9 +11,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class Food extends Item {
-    public static final FoodProperties GRAPE = new FoodProperties.Builder().nutrition(4).build();
-    public static final FoodProperties CRUSHED_GRAPE = new FoodProperties.Builder().nutrition(4).build();
+    public static final FoodProperties GRAPE = new FoodProperties.Builder().nutrition(3).build();
+    public static final FoodProperties CRUSHED_GRAPE = new FoodProperties.Builder().nutrition(3).build();
     public static final FoodProperties CRUSHED_POTATO = new FoodProperties.Builder().nutrition(2).build();
+    public static final FoodProperties CONE = new FoodProperties.Builder().nutrition(2).build();
+    public static final FoodProperties ICE_CREAM = new FoodProperties.Builder().nutrition(5).build();
+    public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(1).build();
 
     public Food(Properties pProperties) {
         super(pProperties);

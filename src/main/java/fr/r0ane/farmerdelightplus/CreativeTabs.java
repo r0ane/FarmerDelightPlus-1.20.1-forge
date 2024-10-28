@@ -29,6 +29,7 @@ public class CreativeTabs {
                         pOutput.accept(FillDataItem.setFillTag(AllBlocks.VODKA_BOTTLE.get().asItem().getDefaultInstance(), 4));
                         pOutput.accept(AllItems.EMPTY_SHOT_GLASS.get());
                         pOutput.accept(AllItems.VODKA_SHOT_GLASS.get());
+                        pOutput.accept(AllItems.BARLEY_SEED.get());
                         pOutput.accept(AllItems.BARLEY.get());
                         pOutput.accept(AllItems.BARLEY_SUGAR_BOTTLE.get());
                         pOutput.accept(AllItems.EMPTY_PINT_OF_BEER.get());
@@ -38,6 +39,17 @@ public class CreativeTabs {
                         pOutput.accept(AllItems.COCA_TREE_SEED.get());
                         pOutput.accept(AllItems.COCA_LEEF.get());
                         pOutput.accept(AllBlocks.FREEZER.get());
+                        pOutput.accept(AllBlocks.STRAWBERRY.get());
+                        pOutput.accept(AllItems.STRAWBERRY_ICE_CREAM_BOTTLE.get());
+                        pOutput.accept(AllItems.VANILLA_ICE_CREAM_BOTTLE.get());
+                        pOutput.accept(AllItems.CHOCOLATE_ICE_CREAM_BOTTLE.get());
+                        pOutput.accept(AllItems.STRAWBERRY_ICE_CREAM_BALL.get());
+                        pOutput.accept(AllItems.VANILLA_ICE_CREAM_BALL.get());
+                        pOutput.accept(AllItems.CHOCOLATE_ICE_CREAM_BALL.get());
+                        pOutput.accept(AllItems.ICE_CREAM_CONE.get());
+                        pOutput.accept(AllItems.STRAWBERRY_ICE_CREAM.get());
+                        pOutput.accept(AllItems.VANILLA_ICE_CREAM.get());
+                        pOutput.accept(AllItems.CHOCOLATE_ICE_CREAM.get());
                     })
                     .build());
 

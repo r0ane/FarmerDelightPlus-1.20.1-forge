@@ -1,4 +1,5 @@
 {
+  "creativetab.farmerdelightplus": "Farmer's Delight +",
   "item.farmerdelightplus.fries": "Fries",
   "item.farmerdelightplus.cooked_fries": "Cooked Fries",
   "item.farmerdelightplus.breading": "Breading",
@@ -13,6 +14,9 @@
   "item.farmerdelightplus.vanilla_ice_cream_ball": "Vanilla Ice Cream Ball",
   "item.farmerdelightplus.strawberry_ice_cream_ball": "Strawberry Ice Cream Ball",
   "item.farmerdelightplus.chocolate_ice_cream_ball": "Chocolate Ice Cream Ball",
+  "item.farmerdelightplus.vanilla_ice_cream_bottle": "Vanilla Ice Cream Bottle",
+  "item.farmerdelightplus.strawberry_ice_cream_bottle": "Strawberry Ice Cream Bottle",
+  "item.farmerdelightplus.chocolate_ice_cream_bottle": "Chocolate Ice Cream Bottle",
   "item.farmerdelightplus.vanilla_ice_cream": "Vanilla Ice Cream",
   "item.farmerdelightplus.strawberry_ice_cream": "Strawberry Ice Cream",
   "item.farmerdelightplus.chocolate_ice_cream": "Chocolate Ice Cream",

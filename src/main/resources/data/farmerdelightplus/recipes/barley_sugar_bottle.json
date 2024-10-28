@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:barley_seed"
+    },
+    {
+      "item": "farmerdelightplus:barley_seed"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "farmerdelightplus:barley_sugar_bottle"
+  }
+}

@@ -15,7 +15,7 @@ public class AllItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Main.MODID);
 
     public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
-            () -> new ItemNameBlockItem(AllBlocks.GRAPE.get(), new Item.Properties().food(Food.CRUSHED_GRAPE)));
+            () -> new ItemNameBlockItem(AllBlocks.BUDDING_GRAPE.get(), new Item.Properties().food(Food.GRAPE)));
 
     public static final RegistryObject<Item> BOWL_OF_CRUSHED_GRAPE = ITEMS.register("bowl_of_crushed_grape",
             () -> new Food(new Item.Properties().craftRemainder(Items.BOWL).food(Food.CRUSHED_GRAPE)));
@@ -44,6 +44,9 @@ public class AllItems {
     public static final RegistryObject<Item> COCA_LEEF = ITEMS.register("coca_leaf",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BARLEY_SEED = ITEMS.register("barley_seed",
+            () -> new ItemNameBlockItem(AllBlocks.BARLEY.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> BARLEY = ITEMS.register("barley",
             () -> new Item(new Item.Properties()));
 
@@ -58,6 +61,39 @@ public class AllItems {
 
     public static final RegistryObject<Item> PINT_OF_BEER = ITEMS.register("pint_of_beer",
             () -> new Drink(new Item.Properties().craftRemainder(EMPTY_PINT_OF_BEER.get()).food(Drink.PINT_OF_BEER)));
+
+    public static final RegistryObject<Item> ICE_CREAM_CONE = ITEMS.register("ice_cream_cone",
+            () -> new Food(new Item.Properties().food(Food.CONE)));
+
+    public static final RegistryObject<Item> STRAWBERRY_ICE_CREAM_BOTTLE = ITEMS.register("strawberry_ice_cream_bottle",
+            () -> new Drink(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).food(Drink.ICE_CREAM)));
+
+    public static final RegistryObject<Item> STRAWBERRY_ICE_CREAM_BALL = ITEMS.register("strawberry_ice_cream_ball",
+            () -> new Food(new Item.Properties().food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> STRAWBERRY_ICE_CREAM = ITEMS.register("strawberry_ice_cream",
+            () -> new Food(new Item.Properties().craftRemainder(ICE_CREAM_CONE.get()).food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> VANILLA_ICE_CREAM_BOTTLE = ITEMS.register("vanilla_ice_cream_bottle",
+            () -> new Drink(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).food(Drink.ICE_CREAM)));
+
+    public static final RegistryObject<Item> VANILLA_ICE_CREAM_BALL = ITEMS.register("vanilla_ice_cream_ball",
+            () -> new Food(new Item.Properties().food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> VANILLA_ICE_CREAM = ITEMS.register("vanilla_ice_cream",
+            () -> new Food(new Item.Properties().craftRemainder(ICE_CREAM_CONE.get()).food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM_BOTTLE = ITEMS.register("chocolate_ice_cream_bottle",
+            () -> new Drink(new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).food(Drink.ICE_CREAM)));
+
+    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM_BALL = ITEMS.register("chocolate_ice_cream_ball",
+            () -> new Food(new Item.Properties().food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM = ITEMS.register("chocolate_ice_cream",
+            () -> new Food(new Item.Properties().craftRemainder(ICE_CREAM_CONE.get()).food(Food.ICE_CREAM)));
+
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new ItemNameBlockItem(AllBlocks.STRAWBERRY.get(), new Item.Properties().food(Food.STRAWBERRY)));
 
 
     public static void register(IEventBus eventBus) {

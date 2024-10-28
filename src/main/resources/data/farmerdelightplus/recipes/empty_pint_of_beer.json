@@ -2,14 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:glass_pane"
+      "item": "minecraft:glass"
     }
   },
   "pattern": [
-    "#",
     "#"
   ],
   "result": {
-    "item": "farmerdelightplus:empty_shot_glass"
+    "item": "farmerdelightplus:empty_pint_of_beer"
   }
 }

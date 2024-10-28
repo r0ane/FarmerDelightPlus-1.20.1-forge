@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:ice_cream_cone"
+    },
+    {
+      "item": "farmerdelightplus:strawberry_ice_cream_ball"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:strawberry_ice_cream",
+    "count": 1
+  }
+}

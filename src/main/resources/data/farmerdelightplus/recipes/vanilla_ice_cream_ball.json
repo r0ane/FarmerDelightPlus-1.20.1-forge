@@ -1,0 +1,12 @@
+{
+  "type": "farmerdelightplus:freezer",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:vanilla_ice_cream_bottle"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:vanilla_ice_cream_ball"
+  },
+  "cooking_time": 125
+}

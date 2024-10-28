@@ -36,6 +36,15 @@ public class AllBlocks {
     public static final RegistryObject<Grape> GRAPE = BLOCKS.register("grape",
             () -> new Grape(BlockBehaviour.Properties.of().noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
 
+    public static final RegistryObject<BuddingGrape> BUDDING_GRAPE = BLOCKS.register("budding_grape",
+            () -> new BuddingGrape(BlockBehaviour.Properties.of().noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Barley> BARLEY = BLOCKS.register("barley",
+            () -> new Barley(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Strawberry> STRAWBERRY = BLOCKS.register("strawberry",
+            () -> new Strawberry(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

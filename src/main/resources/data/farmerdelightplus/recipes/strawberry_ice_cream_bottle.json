@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "farmersdelight:milk_bottle"
+    },
+    {
+      "item": "farmerdelightplus:strawberry"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "farmerdelightplus:strawberry_ice_cream_bottle"
+  }
+}

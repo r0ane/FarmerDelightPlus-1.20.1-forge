@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#&#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete"
+    },
+    "&": {
+      "item": "minecraft:ice"
+    }
+  },
+  "result": {
+    "item": "farmerdelightplus:freezer"
+  }
+}

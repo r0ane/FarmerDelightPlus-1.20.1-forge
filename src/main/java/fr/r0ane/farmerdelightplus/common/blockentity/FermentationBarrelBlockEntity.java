@@ -4,14 +4,18 @@ import fr.r0ane.farmerdelightplus.AllBlockEntity;
 import fr.r0ane.farmerdelightplus.Main;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
 
 public class FermentationBarrelBlockEntity extends BlockEntity {
     private int quantityA = 0;
     private int quantityB = 0;
-    private String type;
+    private String type = "";
 
     public FermentationBarrelBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(AllBlockEntity.FERMENTATION_BARREL_BLOCK_ENTITY.get(), pPos, pBlockState);
@@ -39,9 +43,18 @@ public class FermentationBarrelBlockEntity extends BlockEntity {
     }
 
     public void tick () {
-        if (quantityA > 0 && quantityB < 5000 && level.random.nextFloat() < 1) {
-            DecrementA(1);
-            IncrementB(1);
+        if (this.level == null || this.level.isClientSide) {
+            return;
+        }
+        if (level.isLoaded(getBlockPos())) {
+            if (quantityA > 0 && quantityB < 5000 && level.random.nextFloat() < 0.05) {
+                DecrementA(1);
+                IncrementB(1);
+            } else if (quantityA == 0 && quantityB == 0) {
+                type = "";
+            }
+            //Sync to the client
+            this.level.sendBlockUpdated(this.worldPosition, getBlockState(), getBlockState(), Block.UPDATE_ALL);
         }
     }
 
@@ -79,5 +92,17 @@ public class FermentationBarrelBlockEntity extends BlockEntity {
 
     public void setHisType (String type) {
         this.type = type;
+    }
+
+    @Override
+    public CompoundTag getUpdateTag() {
+        CompoundTag nbt = super.getUpdateTag();
+        saveAdditional(nbt);
+        return nbt;
+    }
+
+    @Override
+    public @Nullable Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
     }
 }

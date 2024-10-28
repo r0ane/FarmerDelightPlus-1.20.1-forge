@@ -1,10 +1,13 @@
 package fr.r0ane.farmerdelightplus.common.block;
 
+import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
+import com.simibubi.create.content.equipment.goggles.IHaveHoveringInformation;
 import fr.r0ane.farmerdelightplus.AllItems;
 import fr.r0ane.farmerdelightplus.common.blockentity.FermentationBarrelBlockEntity;
 import fr.r0ane.farmerdelightplus.util.FillDataItem;
 import fr.r0ane.farmerdelightplus.util.Util;
 import fr.r0ane.farmerdelightplus.util.fItems;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -28,6 +31,8 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class FermentationBarrel extends BaseEntityBlock {
@@ -62,22 +67,25 @@ public class FermentationBarrel extends BaseEntityBlock {
         {
             ItemStack pItem = pPlayer.getItemInHand(pHand);
             BlockEntity be = pLevel.getBlockEntity(pPos);
+            if (be instanceof IHaveGoggleInformation gte && be instanceof IHaveHoveringInformation hte) {
+                List<Component> tooltip = new ArrayList<>();
+                gte.addToGoggleTooltip(tooltip, pPlayer.isShiftKeyDown());
+
+                pPlayer.sendSystemMessage(Component.literal(tooltip.get(0).getString()));
+            }
             if (be instanceof FermentationBarrelBlockEntity pBlockEntity)
             {
-                if (pBlockEntity.getHisType() == null)
+                if (pBlockEntity.getHisType().isEmpty())
                 {
                     pBlockEntity.setHisType(
                             pItem.getItem() == AllItems.BOWL_OF_CRUSHED_GRAPE.get() ? "wine" :
                                     pItem.getItem() == AllItems.POTATO_SUGAR_BOTTLE.get() ? "vodka" :
-                                            pItem.getItem() == AllItems.BARLEY_SUGAR_BOTTLE.get() ? "beer" : null
+                                            pItem.getItem() == AllItems.BARLEY_SUGAR_BOTTLE.get() ? "beer" : pBlockEntity.getHisType()
                     );
                 }
-                if (!(pBlockEntity.getHisType() == null))
+                if (!(pBlockEntity.getHisType().isEmpty()))
                 {
                     onUse(pBlockEntity, pItem, pPlayer, pHand, pBlockEntity.getHisType());
-                    pPlayer.sendSystemMessage(
-                            Component.literal("Grape Juice quantity: " + pBlockEntity.getQuantityA() + "ml\n" + pBlockEntity.getHisType() + " Quantity: " + pBlockEntity.getQuantityB() + "ml")
-                    );
                 }
                 return InteractionResult.sidedSuccess(pLevel.isClientSide());
             }

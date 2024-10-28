@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmerdelightplus:beer_bottle"
+    },
+    {
+      "item": "farmerdelightplus:empty_pint_of_beer"
+    },
+    {
+      "item": "farmerdelightplus:empty_pint_of_beer"
+    }
+  ],
+  "result": {
+    "item": "farmerdelightplus:pint_of_beer",
+    "count": 2
+  }
+}
